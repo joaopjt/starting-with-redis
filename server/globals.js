@@ -1,10 +1,6 @@
 const knex = require('knex');
 const env = require('./core/helpers/env');
 
-/**
- * Knex query builder config
- * @type {Object}
- */
 let knexConfig = {
   client: env('DB_CLIENT'),
   connection: {
