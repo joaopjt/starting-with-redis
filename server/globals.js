@@ -1,6 +1,6 @@
 const knex = require('knex');
 const env = require('./core/helpers/env');
-const knexConfig = ('./knex.config');
+const knexConfig = require('./db.config');
 
 let appGlobals = {
   server: {
