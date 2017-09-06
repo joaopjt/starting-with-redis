@@ -1,21 +1,6 @@
 const knex = require('knex');
 const env = require('./core/helpers/env');
-
-let knexConfig = {
-  client: env('DB_CLIENT'),
-  connection: {
-    host: env('DB_HOST'),
-    user: env('DB_USER'),
-    password: env('DB_PASS'),
-    database: env('DB_NAME')
-  },
-  migrations: {
-    directory: './server/migrations/'
-  },
-  seeds: {
-    directory: './server/seeds/'
-  }
-}
+const knexConfig = ('./knex.config');
 
 let appGlobals = {
   server: {
