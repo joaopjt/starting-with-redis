@@ -14,7 +14,7 @@ module.exports = function(app) {
     handler: function(req, res) {
       let noticies = [];
 
-      for (var i = 3; i < 100; i++) {
+      for (var i = 0; i <= 100; i++) {
         noticies.push({ 
           title: `Notice ${i}`,
           subtitle: `Subtitle of notice ${i}`,
