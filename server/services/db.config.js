@@ -1,4 +1,4 @@
-const env = require('./core/helpers/env');
+const env = require('../core/helpers/env');
 
 module.exports = {
   client: env('DB_CLIENT'),

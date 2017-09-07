@@ -11,7 +11,6 @@ module.exports = {
         cwd: path.resolve(__dirname, '../'),
         verbose: false
       })
-      .include('plugins')
       .then('middlewares')
       .then('routes')
       .into(Server);

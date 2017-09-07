@@ -22,7 +22,7 @@ function serverListeners(Server) {
   Server.on('start', function(err) {
     Core.load(Server); // Load server resources
 
-    console.log('Server running at PORT', Server.info.port);
+    console.log(`SERVER RUNNING IN ${Server.info.host}:${Server.info.port}`);
   });
 
   Server.on('stop', function(err) {
