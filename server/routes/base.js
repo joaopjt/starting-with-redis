@@ -22,13 +22,11 @@ module.exports = function(app) {
           image: 'https://www.google.com.br/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png'
         });
 
-        console.log(i);
       }
 
       DB('noticies')
         .insert(noticies)
         .then(function() {
-          console.log('ADDED NEW NOTIICES IN DATABSE');
           res().code(204);
         });
       

@@ -31,8 +31,6 @@ module.exports = {
   deleteNotice: function(req, res) {
     const params = req.params;
 
-    console.log(params);
-
     DB('noticies')
       .where({
         id: params.id
@@ -70,7 +68,6 @@ function hasCache(key) {
 function cleanCache(key) {
   return new Promise(function(resolve, reject) {
     CACHE.del(key, function(err, reply) {
-      console.log(reply);
       (!err) ? resolve() : reject(err);
     });
   })

@@ -21,7 +21,7 @@ function setListeners(client) {
   });
 
   client.on("error", function (err) {
-      console.log("REDIS SERVICE ERROR: " + err);
+    console.log("REDIS SERVICE ERROR: " + err);
   }); 
 }
 
